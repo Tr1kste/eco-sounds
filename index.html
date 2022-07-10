@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Eco sounds</title>
+    <link rel="stylesheet" href="./style.css">
+    <link type="image/x-icon" href="assets/favicon.ico" rel="shortcut icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-flex">
+            <logo class="logo"></logo>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item active" data-item="forest">Лес</li>
+                    <li class="nav-item" data-item="solovey">Соловей</li>
+                    <li class="nav-item" data-item="drozd">Дрозд</a></li>
+                    <li class="nav-item" data-item="zarynka">Малиновка</li>
+                    <li class="nav-item" data-item="javoronok">Жаворонок</li>
+                    <li class="nav-item" data-item="slavka">Славка</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <button class="play" type="button"></button>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-flex">
+            <div class="footer-copy">
+                <p class="copyright">©</p>
+                <p class="year">2022</p>
+                <a class="github" href="https://github.com/Tr1kste">My GitHub</a>
+            </div>
+            <a class="download-btn" href="./assets/audio/forest.mp3" download>
+                <img class="download-img" src="./assets/svg/download.svg" alt="download">
+            </a>
+            <a class="logo-rs" href="https://rs.school/js-stage0/"></a>
+        </div>
+    </footer>
+    <audio class="audio-player" src="./assets/audio/forest.mp3" loop>Ваш браузер не поддерживает проигрывание
+        музыки!</audio>
+    <script src="./index.js"></script>
+</body>
+
+</html>

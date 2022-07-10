@@ -1,0 +1,160 @@
+:root {
+    --white:#fff;
+    --black:#000;
+    --gold:#bdae82;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    background-color: var(--black);
+    color: var(--white);
+    min-width: 320px;
+}
+
+.container {
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {  
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header-flex, .footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-image: url('./assets/svg/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;  
+    list-style: none;
+}
+
+.nav-item {
+    padding: 0 15px;
+    color: var(--white);
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.nav-item:last-child {
+    padding-right: 0;
+}
+
+.nav-item:hover, .github:hover, .active {
+    color: var(--gold);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./assets/img/forest.jpg");
+    background-size: cover;
+    height: calc(100vh - 120px);
+    min-height: 280px;
+}
+
+.play {
+    width: 160px;
+    height: 160px;
+    background-image: url("./assets/svg/play.svg");
+    background-size: contain;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    filter:  brightness(0) invert(1);
+}
+
+.pause {
+    width: 160px;
+    height: 160px;
+    background-image: url("./assets/svg/pause.svg");
+    background-size: contain;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    filter:  brightness(0) invert(1);
+}
+
+.play:hover, .pause:hover {
+    filter:  none;
+}
+
+.footer-flex {
+    width: calc(100% - 40px);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.footer-copy {
+    display: flex;
+    align-items: center;
+    line-height: 50px;
+}
+
+.copyright {
+    padding-right: 25px;
+}
+
+.github {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0 25px;
+}
+
+.logo-rs {
+    width: 110px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./assets/svg/rss.svg");
+}
+
+.logo-rs:hover, .logo:hover, .download-img:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
+.download-btn {
+    padding-right: 8%;
+}
+
+.download-img {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
